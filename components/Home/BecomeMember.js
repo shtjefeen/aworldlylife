@@ -39,7 +39,7 @@ export default function BecomeMember() {
   return (
     <Wrapper>
       <Container>
-        <Grid container spacing={10}>
+        <Grid container spacing={8}>
           <Grid item xs={12} md={6}>
             <LazyLoadImage
               src={"/images/member.png"}

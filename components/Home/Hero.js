@@ -6,6 +6,7 @@ import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const Wrapper = styled.div`
+  margin-top: 120px;
   h1 {
     font-weight: 500;
     font-size: 48px;
@@ -28,12 +29,17 @@ const Wrapper = styled.div`
   .MuiGrid-item {
     display: flex;
     align-items: center;
-    min-height: 708px;
   }
   .image {
     width: 100%;
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .image {
+      margin-top: 60px;
     }
   }
 `;

@@ -29,8 +29,8 @@ const Wrapper = styled.div`
 `;
 export default function Concept() {
   return (
-    <Wrapper>
-      <Container>
+    <Wrapper id="concept">
+      <Container style={{ maxWidth: 1024 }}>
         <TextDivider />
         <h2>the concept</h2>
         <p>

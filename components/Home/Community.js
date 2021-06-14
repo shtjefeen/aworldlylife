@@ -36,9 +36,9 @@ const Wrapper = styled.div`
 `;
 export default function Community() {
   return (
-    <Wrapper>
+    <Wrapper id="community">
       <Container>
-        <Grid container spacing={10}>
+        <Grid container spacing={8}>
           <Grid item xs={12} md={6}>
             <LazyLoadImage
               src={"/images/community.png"}

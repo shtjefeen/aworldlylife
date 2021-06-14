@@ -35,9 +35,9 @@ const Wrapper = styled.div`
 `;
 export default function AboutUs() {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <Container>
-        <Grid container spacing={10}>
+        <Grid container spacing={8}>
           <Grid item xs={12} md={6}>
             <div>
               <TextDivider />

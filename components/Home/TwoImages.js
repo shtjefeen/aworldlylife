@@ -13,6 +13,13 @@ const Wrapper = styled.div`
       width: 100%;
     }
   }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    .image {
+      width: 100%;
+    }
+  }
 `;
 export default function TwoImages() {
   return (

@@ -23,6 +23,7 @@ class WrappedApp extends App {
     return (
       <React.Fragment>
         <DefaultSeo {...SEO} />
+
         <ThemeProvider theme={theme}>
           <StyledTheme theme={theme}>
             <CssBaseline />

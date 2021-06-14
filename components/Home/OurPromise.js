@@ -32,19 +32,22 @@ const Wrapper = styled.div`
       width: 100%;
     }
   }
+
+  ul {
+    li {
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
 `;
 export default function OurPromise() {
   return (
     <Wrapper>
       <Container>
-        <Grid container spacing={10}>
-          <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              src={"/images/we_at_worldly.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
-          </Grid>
+        <Grid container spacing={8}>
           <Grid item xs={12} md={6}>
             <div>
               <TextDivider />
@@ -81,6 +84,13 @@ export default function OurPromise() {
                 </ul>
               </div>
             </div>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <LazyLoadImage
+              src={"/images/we_at_worldly.png"}
+              effect="blur"
+              wrapperClassName="image"
+            />
           </Grid>
         </Grid>
       </Container>
