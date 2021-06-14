@@ -1,0 +1,140 @@
+import React from "react";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Link from "@design/Link";
+import styled from "styled-components";
+import ArrowLink from "@design/ArrowLink";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+const Wrapper = styled.div`
+  h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+
+    span {
+      color: #993704;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-family: Work Sans;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .MuiGrid-item {
+    display: flex;
+    align-items: center;
+    min-height: 708px;
+  }
+  .image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .under_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #363636;
+  }
+`;
+
+const Card = styled.div`
+  padding: 56px;
+  border-radius: 0px;
+  background-color: #f9f6f4;
+  h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #363636;
+    margin-top: 0;
+  }
+  p {
+    color: #363636;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+  }
+`;
+export default function Hero() {
+  return (
+    <Wrapper>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <div style={{ marginTop: -200 }}>
+              <h1>
+                Become a <span>worldly</span> partner
+              </h1>
+              <p>
+                Tap into the emerging potential of remote workers and long-stay
+                customers.
+              </p>
+              <ArrowLink href="/apply">Apply here</ArrowLink>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <LazyLoadImage
+              alt="hero"
+              src={"/images/partner/hero.png"}
+              effect="blur"
+              wrapperClassName="image"
+            />
+          </Grid>
+        </Grid>
+      </Container>
+
+      <Container
+        style={{
+          paddingRight: 200,
+          marginTop: -400,
+          zIndex: 10,
+          position: "relative",
+        }}
+      >
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <div>
+              <h2 className="under_title">
+                Get access to a new customer group
+              </h2>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Card>
+              <h2>
+                Are you the owner of a hotel, looking for new revenue streams?
+              </h2>
+
+              <p>
+                Become part of the “Worldly” network, list your unique hideaway
+                for free and we help you acquiring a new customer group.
+              </p>
+              <p>
+                We are looking to partner with boutique hotels in unique
+                locations that offer all amenities that a modern remote worker
+                requires.
+              </p>
+              <ArrowLink href="/apply">Become a partner</ArrowLink>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
+    </Wrapper>
+  );
+}

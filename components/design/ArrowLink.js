@@ -8,8 +8,7 @@ const Wrapper = styled(Link)`
     align-items: center;
   }
   .text {
-    color: #993704;
-    font-weight: 600;
+    color: ${(props) => (props.color ? props.color : "#993704")};
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -19,7 +18,7 @@ const Wrapper = styled(Link)`
       content: "";
       position: absolute;
       bottom: -10px;
-      background-color: #993704;
+      background-color: ${(props) => (props.color ? props.color : "#993704")};
       width: 100%;
       height: 3px;
     }
@@ -28,6 +27,11 @@ const Wrapper = styled(Link)`
     margin-left: 15px;
     transition: 0.3s ease-in-out;
     margin-top: 3px;
+
+    svg {
+      fill: ${(props) => (props.color ? props.color : "#993704")};
+      color: ${(props) => (props.color ? props.color : "#993704")};
+    }
   }
   &:hover {
     text-decoration: none !important;
@@ -51,10 +55,7 @@ export default function ArrowLink({ children, ...props }) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
           >
-            <path
-              d="M8 0L6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8z"
-              fill="#993704"
-            />
+            <path d="M8 0L6.59 1.41 12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8-8-8z" />
           </svg>
         </span>
       </div>

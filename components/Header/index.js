@@ -50,11 +50,11 @@ function Index() {
       <Container>
         <Logo style={{ width: 200, fill: "#000" }} link />
         <Navigation>
-          <Link href="/">Intro</Link>
           <Link href="/">The concept</Link>
           <Link href="/">The community</Link>
           <Link href="/">About us</Link>
-          <Link href="/">Locations</Link>
+          <Link href="/locations">Locations</Link>
+          <Link href="/become-partner">Become a partner</Link>
         </Navigation>
       </Container>
     </Header>

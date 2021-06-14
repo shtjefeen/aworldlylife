@@ -8,8 +8,6 @@ import OurPromise from "@components/Home/OurPromise";
 import Community from "@components/Home/Community";
 import AboutUs from "@components/Home/AboutUs";
 import BecomeMember from "@components/Home/BecomeMember";
-import BecomePartner from "@components/Home/BecomePartner";
-
 export default function index() {
   return (
     <>
@@ -23,7 +21,6 @@ export default function index() {
       <Community />
       <AboutUs />
       <BecomeMember />
-      <BecomePartner />
     </>
   );
 }
