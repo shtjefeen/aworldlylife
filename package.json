@@ -18,6 +18,7 @@
     "@material-ui/lab": "^4.0.0-alpha.53",
     "@material-ui/pickers": "^3.2.10",
     "@u-wave/react-vimeo": "^0.9.2",
+    "add": "^2.0.6",
     "axios": "^0.21.1",
     "date-fns": "^2.16.1",
     "formik": "^2.1.5",
@@ -44,9 +45,12 @@
     "react-infinite-scroll-component": "^5.1.0",
     "react-lazy-load-image-component": "^1.5.1",
     "react-lighthouse-viewer": "^6.0.2",
+    "react-magic-slider-dots": "^1.2.2",
     "react-map-gl": "^6.1.9",
     "react-moment": "^0.9.7",
     "react-redux": "^7.2.0",
+    "react-show-more-text": "^1.4.6",
+    "react-slick": "^0.28.1",
     "react-slugify": "^2.0.3",
     "react-spinners": "^0.10.6",
     "react-swipeable-views": "^0.13.9",
@@ -58,6 +62,7 @@
     "slugify": "^1.4.6",
     "styled-components": "^5.1.0",
     "suneditor-react": "^2.14.4",
+    "yarn": "^1.22.10",
     "yup": "^0.29.3"
   },
   "devDependencies": {
