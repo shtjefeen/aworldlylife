@@ -19,17 +19,28 @@ const Title = styled.h6`
   margin: 0;
   margin-bottom: 10px;
 `;
-export default function Filters() {
+export default function Filters({
+  filterCountries,
+  min,
+  max,
+  setMin,
+  setMax,
+  setCountry,
+  country,
+  handleFilter,
+}) {
   return (
     <Wrapper>
       <Title>Filters</Title>
 
       <Autocomplete
-        options={countries}
-        getOptionLabel={(option) => option.name}
+        options={filterCountries}
+        getOptionLabel={(option) => option}
         fullWidth
         value={{ name: "All" }}
         style={{ margin: 0 }}
+        value={country}
+        onChange={(e, val) => setCountry(val)}
         renderInput={(params) => (
           <TextField {...params} label="Country" variant="outlined" />
         )}
@@ -42,6 +53,8 @@ export default function Filters() {
         fullWidth
         type="number"
         style={{ marginBottom: 15 }}
+        value={min}
+        onChange={(e) => setMin(e.target.value)}
         InputProps={{
           startAdornment: <InputAdornment position="start">$</InputAdornment>,
         }}
@@ -51,6 +64,8 @@ export default function Filters() {
         variant="outlined"
         fullWidth
         type="number"
+        value={max}
+        onChange={(e) => setMax(e.target.value)}
         InputProps={{
           startAdornment: <InputAdornment position="start">$</InputAdornment>,
         }}
@@ -61,6 +76,8 @@ export default function Filters() {
         color="primary"
         fullWidth
         style={{ marginTop: 30 }}
+        // disabled={!country && !min && !max}
+        onClick={handleFilter}
       >
         Apply filters
       </Button>

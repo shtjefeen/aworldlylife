@@ -3,9 +3,19 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import MagicSliderDots from "react-magic-slider-dots";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import IconButton from "@material-ui/core/IconButton";
+
 const Wrapper = styled.div`
   width: 35%;
+  cursor: pointer;
+
+  .slider-img {
+    height: 200px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      min-height: 200px;
+    }
+  }
 
   .slick-dots {
     width: 120px;
@@ -37,10 +47,10 @@ const Wrapper = styled.div`
   }
 `;
 
-function Slide() {
+function Slide({ image }) {
   return (
     <div className="slider-img">
-      <img src="https://picsum.photos/300/200" />
+      <img src={image} />
     </div>
   );
 }
@@ -120,16 +130,11 @@ export default class SimpleSlider extends Component {
       },
     };
     return (
-      <Wrapper>
+      <Wrapper onClick={(e) => this.props.handleOpen(this.props.images)}>
         <Slider {...settings}>
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          {this.props.images.map((image) => (
+            <Slide key={image} image={image} />
+          ))}
         </Slider>
       </Wrapper>
     );

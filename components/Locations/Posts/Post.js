@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
   padding: 16px;
   display: flex;
-  align-items: center;
   margin-bottom: 16px;
 
   @media (max-width: 960px) {
@@ -64,6 +63,8 @@ const Book = styled.div`
   width: 20%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 80px;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -75,12 +76,12 @@ const Book = styled.div`
     }
   }
 `;
-export default function index() {
+export default function index({ data = {}, handleOpen }) {
   return (
     <Wrapper>
-      <Gallery />
+      <Gallery images={data.images} handleOpen={handleOpen} />
       <Info>
-        <h4>La villa hermosa</h4>
+        <h4>{data.name}</h4>
         <InfoItem>
           <span className="icon">
             <svg
@@ -99,7 +100,9 @@ export default function index() {
               />
             </svg>
           </span>
-          <span className="text">Location: Nayarit, México</span>
+          <span className="text">
+            Location: {data.city}, {data.country}
+          </span>
         </InfoItem>
         <InfoItem>
           <span className="icon">
@@ -119,11 +122,15 @@ export default function index() {
               />
             </svg>
           </span>
-          <span className="text">Availability: Seasonal</span>
+          <span className="text">Availability: {data.availability}</span>
         </InfoItem>
 
         <InfoItem>
-          From: <strong> $700USD per night</strong>
+          <span style={{ marginRight: 10 }}>From:</span>{" "}
+          <strong>
+            {" "}
+            ${data.from}USD {data.for}
+          </strong>
         </InfoItem>
 
         <ShowMoreText
@@ -132,13 +139,21 @@ export default function index() {
           less="Show less"
           expanded={false}
         >
-          Lorem ipsum dolor sit amet, consectetur ut labore et dolore magna
-          amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <div
+            dangerouslySetInnerHTML={{
+              __html: data.description,
+            }}
+          />
         </ShowMoreText>
       </Info>
 
       <Book>
-        <Button color="primary" variant="contained">
+        <Button
+          color="primary"
+          variant="contained"
+          component="a"
+          href={`mailto:tobias@aworldlylife.com?subject=${data.name}`}
+        >
           Book now
         </Button>
       </Book>

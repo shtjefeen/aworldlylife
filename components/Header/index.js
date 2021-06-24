@@ -13,7 +13,7 @@ const Header = styled.div`
   height: 88px;
   background-color: #fff;
   border-bottom: 1px solid ${(props) => props.theme.palette.divider};
-  z-index: 1200;
+  z-index: 300;
   padding: 0 30px;
 
   > div {

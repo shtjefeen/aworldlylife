@@ -8,7 +8,6 @@ import LayoutDefault from "@layouts/Default";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
-
 class WrappedApp extends App {
   componentDidMount() {
     const jssStyles = document.querySelector("#jss-server-side");
