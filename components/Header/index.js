@@ -56,31 +56,12 @@ const Navigation = styled.div`
 `;
 
 function Index() {
-  const scrollToTargetAdjusted = (element) => {
-    Router.push(`/#${element}`);
-    var element = document.getElementById(element);
-    if (element) {
-      var headerOffset = 85;
-      var elementPosition = element.getBoundingClientRect().top;
-      var offsetPosition = elementPosition - headerOffset;
-
-      window.scrollBy({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <Header>
       <Container>
         <Logo style={{ width: 200, fill: "#000" }} link />
         <Navigation>
-          <a onClick={(e) => scrollToTargetAdjusted("concept")}>The concept</a>
-          <a onClick={(e) => scrollToTargetAdjusted("community")}>
-            The community
-          </a>
-          <a onClick={(e) => scrollToTargetAdjusted("about")}>About us</a>
+          <Link href="/">Home</Link>
           <Link href="/locations">Locations</Link>
           <Link href="/become-partner">Become a partner</Link>
         </Navigation>

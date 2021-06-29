@@ -22,10 +22,6 @@ const Wrapper = styled.div`
     margin-bottom: 30px;
   }
 
-  .MuiGrid-item {
-    display: flex;
-    align-items: center;
-  }
   .image {
     width: 100%;
     img {
@@ -47,7 +43,14 @@ export default function OurPromise() {
   return (
     <Wrapper>
       <Container>
-        <Grid container spacing={8}>
+        <Grid container spacing={10}>
+          <Grid item xs={12} md={6}>
+            <LazyLoadImage
+              src={"/images/we_at_worldly.png"}
+              effect="blur"
+              wrapperClassName="image"
+            />
+          </Grid>
           <Grid item xs={12} md={6}>
             <div>
               <TextDivider />
@@ -84,13 +87,6 @@ export default function OurPromise() {
                 </ul>
               </div>
             </div>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              src={"/images/we_at_worldly.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
           </Grid>
         </Grid>
       </Container>

@@ -5,6 +5,7 @@ import WhatWeOffer from "@components/BecomePartner/WhatWeOffer";
 import WhatWeAreLookingFor from "@components/BecomePartner/WhatWeAreLookingFor";
 import FeelLike from "@components/BecomePartner/FeelLike";
 import HowItWorks from "@components/BecomePartner/HowItWorks";
+import Contact from "@components/Contact";
 const Wrapper = styled.div``;
 export default function BecomePartner() {
   return (
@@ -14,6 +15,7 @@ export default function BecomePartner() {
       <WhatWeAreLookingFor />
       <FeelLike />
       <HowItWorks />
+      <Contact />
     </Wrapper>
   );
 }

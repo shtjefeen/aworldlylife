@@ -2,13 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-
+import ArrowLink from "@design/ArrowLink";
 const Wrapper = styled.div`
   background: #f4f7f9;
   padding: 120px 0;
 
   h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -152,6 +151,11 @@ export default function HowItWorks() {
             />
           </Grid>
         </Grid>
+        <div
+          style={{ display: "flex", justifyContent: "center", marginTop: 60 }}
+        >
+          <ArrowLink href="/apply">Become a partner</ArrowLink>
+        </div>
       </Container>
     </Wrapper>
   );

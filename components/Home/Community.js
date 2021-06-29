@@ -23,10 +23,6 @@ const Wrapper = styled.div`
     margin-bottom: 30px;
   }
 
-  .MuiGrid-item {
-    display: flex;
-    align-items: center;
-  }
   .image {
     width: 100%;
     img {
@@ -38,14 +34,7 @@ export default function Community() {
   return (
     <Wrapper id="community">
       <Container>
-        <Grid container spacing={8}>
-          <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              src={"/images/community.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
-          </Grid>
+        <Grid container spacing={10}>
           <Grid item xs={12} md={6}>
             <div>
               <TextDivider />
@@ -66,6 +55,14 @@ export default function Community() {
                 locations and at inspiring events throughout the year.
               </p>
             </div>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <LazyLoadImage
+              src={"/images/community.png"}
+              effect="blur"
+              wrapperClassName="image"
+            />
           </Grid>
         </Grid>
       </Container>

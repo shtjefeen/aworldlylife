@@ -10,13 +10,19 @@ const Wrapper = styled.div`
   }
 
   h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 40px;
     text-transform: uppercase;
     color: #000000;
+  }
+
+  @media (max-width: 960px) {
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
 `;
 

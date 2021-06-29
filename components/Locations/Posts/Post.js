@@ -22,7 +22,7 @@ const Info = styled.div`
   padding-left: 30px;
   h4 {
     margin: 0;
-    font-family: Montserrat;
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

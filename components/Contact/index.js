@@ -5,29 +5,28 @@ import styled from "styled-components";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TextDivider from "@design/TextDivider";
 import ArrowLink from "@design/ArrowLink";
+import Link from "@material-ui/core/Link";
+import Form from "./Form";
+
 const Wrapper = styled.div`
   margin: 144px auto;
   h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     text-transform: uppercase;
     color: #000000;
-
+    margin-bottom: 0;
     span {
       color: #993704;
     }
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: Work Sans;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
-  /* .MuiGrid-item {
-    display: flex;
-    align-items: center;
-  } */
   .image {
     width: 100%;
     img {
@@ -40,29 +39,22 @@ export default function BecomeMember() {
     <Wrapper>
       <Container>
         <Grid container spacing={10}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={4}>
             <div>
               <TextDivider />
-              <h1>Become a member</h1>
+              <h1>Contact</h1>
               <p>
-                Enjoy exclusive access to our offers - Join the waitlist today!
+                <Link href="mailto:tobias@aworldlylife.com">
+                  tobias@aworldlylife.com
+                </Link>
               </p>
-              <ArrowLink href="/">Join Us</ArrowLink>
-
-              <p style={{ marginTop: 60 }}>
-                What happens next? <br />
-                <br />
-                You sign up and get on the waitlist. As soon as it is your turn,
-                we share the hidden spots with you. <br />
-                <br />
-                You tell us where you want to go and we take care of the rest.
-              </p>
+              <Form />
             </div>
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={8}>
             <LazyLoadImage
-              src={"/images/member.png"}
+              src={"/images/contact.png"}
               effect="blur"
               wrapperClassName="image"
             />

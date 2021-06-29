@@ -1,7 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
-import Link from "@design/Link";
 import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -38,7 +37,6 @@ const Wrapper = styled.div`
   }
 
   .under_title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -46,14 +44,43 @@ const Wrapper = styled.div`
     text-transform: uppercase;
     color: #363636;
   }
+
+  .bottom {
+    padding-right: 100px;
+    margin-top: -400px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .top {
+    margin-top: -200px;
+  }
+
+  @media (max-width: 960px) {
+    margin-top: 60px;
+
+    .image {
+      margin-top: 60px;
+    }
+    .top {
+      margin-top: 0;
+    }
+    .bottom {
+      padding-right: 0;
+      margin-top: 60px;
+    }
+
+    .MuiGrid-item {
+      min-height: auto;
+    }
+  }
 `;
 
 const Card = styled.div`
-  padding: 56px;
+  padding: 56px 48px;
   border-radius: 0px;
   background-color: #f9f6f4;
   h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -77,11 +104,11 @@ export default function Hero() {
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <div style={{ marginTop: -200 }}>
+            <div className="top">
               <h1>
                 Become a <span>worldly</span> partner
               </h1>
-              <p>
+              <p style={{ marginTop: 20 }}>
                 Tap into the emerging potential of remote workers and long-stay
                 customers.
               </p>
@@ -99,14 +126,7 @@ export default function Hero() {
         </Grid>
       </Container>
 
-      <Container
-        style={{
-          paddingRight: 200,
-          marginTop: -400,
-          zIndex: 10,
-          position: "relative",
-        }}
-      >
+      <Container className="bottom">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <div>

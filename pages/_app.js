@@ -23,6 +23,12 @@ class WrappedApp extends App {
       <React.Fragment>
         <DefaultSeo {...SEO} />
 
+        <style global jsx>{`
+          .MuiContainer-root {
+            max-width: 1107px;
+          }
+        `}</style>
+
         <ThemeProvider theme={theme}>
           <StyledTheme theme={theme}>
             <CssBaseline />

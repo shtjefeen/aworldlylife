@@ -87,6 +87,10 @@ export default class Document extends NextDocument {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+          ></script>
         </Head>
 
         <body>

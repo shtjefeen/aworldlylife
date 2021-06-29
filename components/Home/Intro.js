@@ -9,12 +9,10 @@ const Wrapper = styled.div`
     font-weight: 600;
     font-size: 24px;
     line-height: 40px;
-    /* or 167% */
-
     text-transform: uppercase;
   }
   p {
-    max-width: 800px;
+    max-width: 900px;
     font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
@@ -25,7 +23,7 @@ const Wrapper = styled.div`
 export default function Intro() {
   return (
     <Wrapper>
-      <Container>
+      <Container style={{ maxWidth: 900 }}>
         <TextDivider />
         <h2>
           Work and holiday – two words <br /> that used to be contradictory

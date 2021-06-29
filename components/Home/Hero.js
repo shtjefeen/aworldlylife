@@ -6,7 +6,7 @@ import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const Wrapper = styled.div`
-  margin-top: 120px;
+  margin-top: 60px;
   h1 {
     font-weight: 500;
     font-size: 48px;
@@ -47,20 +47,20 @@ export default function Hero() {
   return (
     <Wrapper>
       <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={8}>
+          <Grid item xs={12} md={7}>
             <div>
               <h1>
                 we curate <span>unique</span> locations for you. To work, live
                 and discover.
               </h1>
-              <p>
+              <p style={{ marginTop: 20 }}>
                 Sign up today and get exclusive access to the Worldly universe.
               </p>
               <ArrowLink href="/join">Join us</ArrowLink>
             </div>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
             <LazyLoadImage
               alt="hero"
               src={"/images/hero.png"}

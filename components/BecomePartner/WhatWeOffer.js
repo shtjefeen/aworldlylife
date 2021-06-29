@@ -21,7 +21,6 @@ const Wrapper = styled.div`
     padding: 60px;
 
     h2 {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
       font-size: 32px;
@@ -40,6 +39,13 @@ const Wrapper = styled.div`
         color: #363636;
         margin-bottom: 30px;
       }
+    }
+  }
+
+  @media (max-width: 960px) {
+    margin: 60px auto;
+    .info--wrapper {
+      padding: 30px;
     }
   }
 `;

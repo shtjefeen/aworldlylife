@@ -10,7 +10,6 @@ import "react-image-lightbox/style.css";
 const Title = styled.div`
   margin: 48px 0;
   p {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -21,7 +20,6 @@ const Title = styled.div`
   }
 
   h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -69,10 +67,10 @@ const data = [
     from: 4000,
     for: "for 4 weeks",
     images: [
-      "/images/rooms/1/1.jpg",
-      "/images/rooms/1/2.jpg",
-      "/images/rooms/1/3.jpg",
-      "/images/rooms/1/4.jpg",
+      "/images/rooms/2/1.jpg",
+      "/images/rooms/2/2.jpg",
+      "/images/rooms/2/3.jpg",
+      "/images/rooms/2/4.jpg",
     ],
   },
 
@@ -125,12 +123,11 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
     availability: "May, June, October, November",
     from: 4900,
     for: "for 4 weeks",
-
     images: [
-      "/images/rooms/2/1.jpg",
-      "/images/rooms/2/2.jpg",
-      "/images/rooms/2/3.jpg",
-      "/images/rooms/2/4.jpg",
+      "/images/rooms/1/1.jpg",
+      "/images/rooms/1/2.jpg",
+      "/images/rooms/1/3.jpg",
+      "/images/rooms/1/4.jpg",
     ],
   },
   {
