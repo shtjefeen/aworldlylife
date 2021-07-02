@@ -1,15 +1,15 @@
 {
-  "name": "cattaro_admin",
-  "version": "0.8.1",
-  "description": "Sanieren24",
+  "name": "worldly",
+  "version": "1.0.0",
+  "description": "worldly",
   "main": "index.js",
   "author": "Tetbit",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next -p 3000",
+    "dev": "next",
     "build": "next build",
-    "start": "next start -p 5051"
+    "start": "next start"
   },
   "dependencies": {
     "@date-io/date-fns": "1.x",
