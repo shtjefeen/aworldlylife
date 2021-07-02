@@ -57,7 +57,12 @@ export default function Hero() {
               <p style={{ marginTop: 20 }}>
                 Sign up today and get exclusive access to the Worldly universe.
               </p>
-              <ArrowLink href="/join">Join us</ArrowLink>
+              <ArrowLink
+                target="_blank"
+                href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
+              >
+                Join us
+              </ArrowLink>
             </div>
           </Grid>
           <Grid item xs={12} md={5}>

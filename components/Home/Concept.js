@@ -45,7 +45,12 @@ export default function Concept() {
           Feel home everywhere with all the services and amenities you need to
           be productive, combined with a community to connect.
         </p>
-        <ArrowLink href="/join">Join us</ArrowLink>
+        <ArrowLink
+          target="_blank"
+          href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
+        >
+          Join us
+        </ArrowLink>
       </Container>
     </Wrapper>
   );

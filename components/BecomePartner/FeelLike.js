@@ -47,7 +47,11 @@ export default function FeelLike() {
           Feel like you want to be part of <span>Worldly</span>?
         </h2>
 
-        <ArrowLink color="#000" href="/">
+        <ArrowLink
+          color="#000"
+          target="_blank"
+          href="https://share.hsforms.com/18Y4I9TkbQl68vJnxj8Swqgboy0c"
+        >
           Become a partner
         </ArrowLink>
       </div>

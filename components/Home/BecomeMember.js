@@ -47,7 +47,12 @@ export default function BecomeMember() {
               <p>
                 Enjoy exclusive access to our offers - Join the waitlist today!
               </p>
-              <ArrowLink href="/">Join Us</ArrowLink>
+              <ArrowLink
+                target="_blank"
+                href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
+              >
+                Join Us
+              </ArrowLink>
 
               <p style={{ marginTop: 60 }}>
                 What happens next? <br />

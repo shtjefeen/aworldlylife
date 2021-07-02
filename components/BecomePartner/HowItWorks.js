@@ -154,7 +154,12 @@ export default function HowItWorks() {
         <div
           style={{ display: "flex", justifyContent: "center", marginTop: 60 }}
         >
-          <ArrowLink href="/apply">Become a partner</ArrowLink>
+          <ArrowLink
+            target="_blank"
+            href="https://share.hsforms.com/18Y4I9TkbQl68vJnxj8Swqgboy0c"
+          >
+            Become a partner
+          </ArrowLink>
         </div>
       </Container>
     </Wrapper>

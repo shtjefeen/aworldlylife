@@ -112,7 +112,12 @@ export default function Hero() {
                 Tap into the emerging potential of remote workers and long-stay
                 customers.
               </p>
-              <ArrowLink href="/apply">Apply here</ArrowLink>
+              <ArrowLink
+                target="_blank"
+                href="https://share.hsforms.com/18Y4I9TkbQl68vJnxj8Swqgboy0c"
+              >
+                Apply here
+              </ArrowLink>
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -150,7 +155,12 @@ export default function Hero() {
                 locations that offer all amenities that a modern remote worker
                 requires.
               </p>
-              <ArrowLink href="/apply">Become a partner</ArrowLink>
+              <ArrowLink
+                target="_blank"
+                href="https://share.hsforms.com/18Y4I9TkbQl68vJnxj8Swqgboy0c"
+              >
+                Become a partner
+              </ArrowLink>
             </Card>
           </Grid>
         </Grid>
