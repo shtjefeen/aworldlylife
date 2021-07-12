@@ -61,7 +61,10 @@ export default function Hero() {
             </div>
           </Grid>
           <Grid item xs={12} md={5}>
-            <Image alt="To work, live and discover." src={"/images/hero.png"} />
+            <Image
+              alt="To work, live and discover."
+              src={"./images/hero.png"}
+            />
           </Grid>
         </Grid>
       </Container>

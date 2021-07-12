@@ -58,7 +58,7 @@ export default function Community() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Image src={"/images/community.png"} alt="The community" />
+            <Image src={"./images/community.png"} alt="The community" />
           </Grid>
         </Grid>
       </Container>

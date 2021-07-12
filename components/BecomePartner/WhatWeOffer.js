@@ -55,7 +55,7 @@ export default function WhatWeOffer() {
       <Grid container spacing={0}>
         <Grid item xs={12} md={6}>
           <Image
-            src={"/images/partner/what-we-offer.png"}
+            src={"./images/partner/what-we-offer.png"}
             alt="What we offer"
           />
         </Grid>

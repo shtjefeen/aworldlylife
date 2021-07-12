@@ -52,7 +52,7 @@ export default function BecomeMember() {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <Image src={"/images/contact.png"} alt="Contact us" />
+            <Image src={"./images/contact.png"} alt="Contact us" />
           </Grid>
         </Grid>
       </Container>

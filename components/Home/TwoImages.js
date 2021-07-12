@@ -24,8 +24,8 @@ const Wrapper = styled.div`
 export default function TwoImages() {
   return (
     <Wrapper>
-      <Image src={"/images/image_one.png"} alt="" />
-      <Image src={"/images/image_two.png"} alt="" />
+      <Image src={"./images/image_one.png"} alt="" />
+      <Image src={"./images/image_two.png"} alt="" />
     </Wrapper>
   );
 }

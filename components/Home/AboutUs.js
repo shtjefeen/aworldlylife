@@ -35,7 +35,7 @@ export default function AboutUs() {
       <Container>
         <Grid container spacing={10}>
           <Grid item xs={12} md={6}>
-            <Image src={"/images/about_us.png"} alt="About us" />
+            <Image src={"./images/about_us.png"} alt="About us" />
           </Grid>
           <Grid item xs={12} md={6}>
             <div>

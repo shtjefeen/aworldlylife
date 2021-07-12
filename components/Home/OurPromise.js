@@ -45,7 +45,7 @@ export default function OurPromise() {
       <Container>
         <Grid container spacing={10}>
           <Grid item xs={12} md={6}>
-            <Image src={"/images/we_at_worldly.png"} alt="Our promise" />
+            <Image src={"./images/we_at_worldly.png"} alt="Our promise" />
           </Grid>
           <Grid item xs={12} md={6}>
             <div>

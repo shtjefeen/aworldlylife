@@ -122,7 +122,7 @@ export default function Hero() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Image
-              src={"/images/partner/hero.png"}
+              src={"./images/partner/hero.png"}
               alt="Become a worldly partner"
             />
           </Grid>

@@ -66,7 +66,7 @@ export default function BecomeMember() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Image src={"/images/member.png"} alt="Become a member" />
+            <Image src={"./images/member.png"} alt="Become a member" />
           </Grid>
         </Grid>
       </Container>

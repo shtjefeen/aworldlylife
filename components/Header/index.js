@@ -4,7 +4,6 @@ import Logo from "@components/design/Logo";
 import Link from "@design/Link";
 import Mobile from "./Mobile";
 import Container from "@material-ui/core/Container";
-import Router from "next/router";
 const Header = styled.div`
   width: 100%;
   position: fixed;
