@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import styled from "styled-components";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 import TextDivider from "@design/TextDivider";
 const Wrapper = styled.div`
   h1 {
@@ -35,11 +35,7 @@ export default function AboutUs() {
       <Container>
         <Grid container spacing={10}>
           <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              src={"/images/about_us.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
+            <Image src={"/images/about_us.png"} alt="About us" />
           </Grid>
           <Grid item xs={12} md={6}>
             <div>

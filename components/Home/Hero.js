@@ -1,10 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
-import Link from "@design/Link";
 import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 const Wrapper = styled.div`
   margin-top: 60px;
   h1 {
@@ -30,13 +29,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
   }
-  .image {
+  img {
     width: 100%;
-    img {
-      width: 100%;
-    }
   }
-
   @media (max-width: 960px) {
     .image {
       margin-top: 60px;
@@ -66,12 +61,7 @@ export default function Hero() {
             </div>
           </Grid>
           <Grid item xs={12} md={5}>
-            <LazyLoadImage
-              alt="hero"
-              src={"/images/hero.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
+            <Image alt="To work, live and discover." src={"/images/hero.png"} />
           </Grid>
         </Grid>
       </Container>

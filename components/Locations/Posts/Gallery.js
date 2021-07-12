@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import MagicSliderDots from "react-magic-slider-dots";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-
+import Image from "@components/Image";
 const Wrapper = styled.div`
   width: 35%;
   cursor: pointer;
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 function Slide({ image }) {
   return (
     <div className="slider-img">
-      <img src={image} />
+      <Image src={image} alt="" />
     </div>
   );
 }
@@ -88,7 +88,6 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <span
-      onClick={onClick}
       style={{
         position: "absolute",
         left: "30px",

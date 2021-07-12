@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import MuiLink from '@material-ui/core/Link';
+import React from "react";
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import { useRouter } from "next/router";
+import NextLink from "next/link";
+import MuiLink from "@material-ui/core/Link";
 
 const NextComposed = React.forwardRef(function NextComposed(props, ref) {
   const { as, href, prefetch, ...other } = props;
@@ -23,7 +23,7 @@ NextComposed.propTypes = {
 
 function Link(props) {
   const {
-    activeClassName = 'active',
+    activeClassName = "active",
     className: classNameProps,
     innerRef,
     naked,
@@ -60,6 +60,7 @@ Link.propTypes = {
   prefetch: PropTypes.bool,
 };
 
+// eslint-disable-next-line react/display-name
 export default React.forwardRef((props, ref) => (
   <Link {...props} innerRef={ref} />
 ));

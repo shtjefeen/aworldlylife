@@ -37,7 +37,6 @@ export default function Filters({
         options={filterCountries}
         getOptionLabel={(option) => option}
         fullWidth
-        value={{ name: "All" }}
         style={{ margin: 0 }}
         value={country}
         onChange={(e, val) => setCountry(val)}

@@ -2,22 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@design/*": ["components/design/*"],
-      "@cards/*": ["components/cards/*"],
-      "@pages/*": ["components/pages/*"],
       "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
       "@hocs/*": ["hocs/*"],
       "@layouts/*": ["layouts/*"],
-      "@modal/*": ["components/modal/*"],
-      "@actions/*": ["redux/actions/*"],
-      "@reducers/*": ["redux/reducers/*"],
-      "@loaders/*": ["components/loaders/*"],
-      "@translations/*": ["components/translations/*"],
-      "@wrappers/*": ["wrappers/*"],
-      "@utils/*": ["utils/*"],
-      "@image/*": ["components/Image/*"],
-      "@hoc/*": ["hoc/*"]
+      "@design/*": ["components/design/*"],
     }
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import styled from "styled-components";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 import TextDivider from "@design/TextDivider";
 const Wrapper = styled.div`
   margin: 144px auto;
@@ -58,11 +58,7 @@ export default function Community() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              src={"/images/community.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
+            <Image src={"/images/community.png"} alt="The community" />
           </Grid>
         </Grid>
       </Container>

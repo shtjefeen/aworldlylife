@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 
 const shadows = [
   "none",
@@ -28,7 +28,7 @@ const shadows = [
   "0px 10px 13px -6px rgba(0, 0, 0, 0.06),0px 20px 31px 3px rgba(0, 0, 0, 0.042),0px 8px 38px 7px rgba(0, 0, 0, 0.036)",
 ];
 // Create a theme instance.
-const theme = createMuiTheme({
+const theme = createTheme({
   shape: {
     borderRadius: 0,
   },

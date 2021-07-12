@@ -5,7 +5,6 @@ import * as Yup from "yup";
 import Button from "@material-ui/core/Button";
 import Input from "./Input";
 import TextArea from "./TextArea";
-import Loader from "@loaders/Global";
 import Alert from "@material-ui/lab/Alert";
 const Wrapper = styled.div``;
 

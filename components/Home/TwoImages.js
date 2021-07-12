@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -24,16 +24,8 @@ const Wrapper = styled.div`
 export default function TwoImages() {
   return (
     <Wrapper>
-      <LazyLoadImage
-        src={"/images/image_one.png"}
-        effect="blur"
-        wrapperClassName="image"
-      />
-      <LazyLoadImage
-        src={"/images/image_two.png"}
-        effect="blur"
-        wrapperClassName="image"
-      />
+      <Image src={"/images/image_one.png"} alt="" />
+      <Image src={"/images/image_two.png"} alt="" />
     </Wrapper>
   );
 }

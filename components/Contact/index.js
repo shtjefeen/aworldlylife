@@ -2,9 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import styled from "styled-components";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 import TextDivider from "@design/TextDivider";
-import ArrowLink from "@design/ArrowLink";
 import Link from "@material-ui/core/Link";
 import Form from "./Form";
 
@@ -53,11 +52,7 @@ export default function BecomeMember() {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <LazyLoadImage
-              src={"/images/contact.png"}
-              effect="blur"
-              wrapperClassName="image"
-            />
+            <Image src={"/images/contact.png"} alt="Contact us" />
           </Grid>
         </Grid>
       </Container>

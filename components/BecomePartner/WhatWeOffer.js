@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 const Wrapper = styled.div`
   margin: 140px auto;
 
@@ -54,10 +54,9 @@ export default function WhatWeOffer() {
     <Wrapper>
       <Grid container spacing={0}>
         <Grid item xs={12} md={6}>
-          <LazyLoadImage
+          <Image
             src={"/images/partner/what-we-offer.png"}
-            effect="blur"
-            wrapperClassName="image"
+            alt="What we offer"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -67,7 +66,7 @@ export default function WhatWeOffer() {
             <ul>
               <li>
                 Access to a unique crowd of modern travellers that further
-                elevate the hotel's brand
+                elevate the hotel&apos;s brand
               </li>
 
               <li>

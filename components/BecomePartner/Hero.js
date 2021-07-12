@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "@components/Image";
 const Wrapper = styled.div`
   h1 {
     font-weight: 500;
@@ -121,11 +121,9 @@ export default function Hero() {
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
-            <LazyLoadImage
-              alt="hero"
+            <Image
               src={"/images/partner/hero.png"}
-              effect="blur"
-              wrapperClassName="image"
+              alt="Become a worldly partner"
             />
           </Grid>
         </Grid>

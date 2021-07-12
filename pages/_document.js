@@ -1,9 +1,10 @@
 import React from "react";
-import NextDocument, { Head, Main, NextScript, Html } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 import { ServerStyleSheet as StyledComponentSheets } from "styled-components";
 import { ServerStyleSheets as MaterialUiServerStyleSheets } from "@material-ui/styles";
 
-export default class Document extends NextDocument {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const styledComponentSheet = new StyledComponentSheets();
     const materialUiSheets = new MaterialUiServerStyleSheets();
@@ -18,7 +19,7 @@ export default class Document extends NextDocument {
             ),
         });
 
-      const initialProps = await NextDocument.getInitialProps(ctx);
+      const initialProps = await Document.getInitialProps(ctx);
 
       return {
         ...initialProps,
@@ -40,7 +41,6 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <meta charSet="utf-8" />
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -66,9 +66,16 @@ export default class Document extends NextDocument {
             content="/favicon/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400,500;0,700;1,200&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap"
             rel="stylesheet"
           />
           <link
@@ -79,7 +86,7 @@ export default class Document extends NextDocument {
           <link
             rel="stylesheet"
             type="text/css"
-            charset="UTF-8"
+            charSet="UTF-8"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
           />
           <link
@@ -87,10 +94,7 @@ export default class Document extends NextDocument {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
-          <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-          ></script>
+          <Script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" />
         </Head>
 
         <body>
@@ -101,3 +105,5 @@ export default class Document extends NextDocument {
     );
   }
 }
+
+export default MyDocument;

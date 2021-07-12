@@ -188,12 +188,12 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
   },
 ];
 
-export default function locations() {
+export default function Locations() {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [galleryImage, setGalleryImage] = useState([]);
-  const [min, setMin] = useState(null);
-  const [max, setMax] = useState(null);
+  const [min, setMin] = useState("");
+  const [max, setMax] = useState("");
   const [country, setCountry] = useState(null);
   const [locations, setLocations] = useState(data);
 
@@ -285,8 +285,8 @@ export default function locations() {
             />
           </Grid>
           <Grid item xs={12} md={9}>
-            {locations.map((item) => (
-              <Post data={item} handleOpen={handleOpen} />
+            {locations.map((item, index) => (
+              <Post data={item} handleOpen={handleOpen} key={index} />
             ))}
           </Grid>
         </Grid>

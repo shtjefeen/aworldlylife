@@ -5,41 +5,45 @@ import { ThemeProvider as StyledTheme } from "styled-components";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../theme/light";
 import LayoutDefault from "@layouts/Default";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
-class WrappedApp extends App {
-  componentDidMount() {
+
+import PropTypes from "prop-types";
+
+export default function MyApp(props) {
+  const { Component, pageProps } = props;
+
+  React.useEffect(() => {
+    // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
-  }
+  }, []);
 
-  render() {
-    const { Component, pageProps, router } = this.props;
-    const Layout = Component.Layout || LayoutDefault;
-    return (
-      <React.Fragment>
-        <DefaultSeo {...SEO} />
+  return (
+    <React.Fragment>
+      <DefaultSeo {...SEO} />
 
-        <style global jsx>{`
-          .MuiContainer-root {
-            max-width: 1107px;
-          }
-        `}</style>
+      <style global jsx>{`
+        .MuiContainer-root {
+          max-width: 1107px;
+        }
+      `}</style>
 
-        <ThemeProvider theme={theme}>
-          <StyledTheme theme={theme}>
-            <CssBaseline />
-            <Layout>
-              <Component {...pageProps} key={router.route} />
-            </Layout>
-          </StyledTheme>
-        </ThemeProvider>
-      </React.Fragment>
-    );
-  }
+      <ThemeProvider theme={theme}>
+        <StyledTheme theme={theme}>
+          <CssBaseline />
+          <LayoutDefault>
+            <Component {...pageProps} />
+          </LayoutDefault>
+        </StyledTheme>
+      </ThemeProvider>
+    </React.Fragment>
+  );
 }
 
-export default WrappedApp;
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
+};

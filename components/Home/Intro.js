@@ -34,8 +34,8 @@ export default function Intro() {
           enabled you to do those things. Working in a different environment, a
           foreign culture, among inspiring people can be a tremendous creativity
           and productivity booster. We all have spaces where we feel most alive
-          - whether it's a certain city, a farm or an island. All necessities
-          are available on demand.
+          - whether it&apos;s a certain city, a farm or an island. All
+          necessities are available on demand.
         </p>
         <p>
           We curate the most attractive long-stay deals for you with hotels
