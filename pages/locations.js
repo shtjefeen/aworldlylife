@@ -33,6 +33,165 @@ const Wrapper = styled.div``;
 
 const data = [
 
+
+
+  {
+    name: "Hotel Lo Sereno",
+    description: `
+    <p style={{margin: 0}}>
+    Lo Sereno presents a sensual and sophisticated approach to barefoot elegance. The ten-suite hotel exists in a balance of romance and adventure, including a gourmet Mexican concept kitchen, sourcing local fresh ingredients daily. The bar and dining area are open-air and encapsulated by the hotel’s glittering black infinity pool. At Lo Sereno you can enjoy cocktails and beverages either at the dining area, in the lounge, or on the beach. Lo Sereno provides all the amenities a modern traveler may desire, curating brands worldwide for an all-sensory experience. One visit to Lo Sereno and you will always have a home to return to on the beach.
+    </p>
+
+    <ul>
+      <li>
+      breakfast included
+      </li>
+      <li>
+      comfortable workspaces
+      </li>
+      <li>
+      fast and stable WiFi
+      </li>
+      <li>
+      workspace outside the room
+      </li>
+      <li>
+      additional IT hardware upon request
+      </li>
+      <li>
+      daily room cleaning
+      </li>
+    </ul>
+    
+    `,
+    city: "Troncones",
+    country: "Mexico",
+    availability: "All year round",
+    from: 4000,
+    for: "for 4 weeks",
+    images: [
+      "./images/rooms/2/1.jpg",
+      "./images/rooms/2/2.jpg",
+      "./images/rooms/2/3.jpg",
+      "./images/rooms/2/4.jpg",
+    ],
+    category: 'Hotel'
+  },
+
+  {
+    name: "CERVO Mountain Resort",
+    description: `
+    <p style={{margin: 0}}>
+    Surrounded by the rugged beauty of Zermatt, the CERVO is the gateway to the
+mystical mountain world of the Alps. With a deeply rooted sense of the extraordinary, of highest
+quality and of authentic hospitality, CERVO invites its guests to explore the impressive nature
+around us. And to discover themselves. Casual luxury, a modern design, warm colors and
+natural materials. This is the contemporary alpine style of CERVO.</p>
+
+    <ul>
+      <li>
+      room category: Nomad room L, Nomad room M
+      </li>
+      <li>
+      breakfast not included
+      </li>
+      <li>
+      comfortable workspaces
+      </li>
+      <li>
+      fast and stable WiFi
+      </li>
+      <li>
+      co-working space “Ferdi” included
+      </li>
+      <li>
+      exclusive Spa included
+      </li>
+      <li>
+      additional IT hardware upon request
+      </li>
+      <li>
+      weekly room cleaning
+      </li>
+      <li>
+      pet friendly!
+      </li>
+      <li>
+      Yoga and meditation classes
+      </li>
+    </ul>
+    
+    `,
+    city: "Zermatt",
+    country: "Switzerland",
+    availability: "May, June, October, November",
+    from: 4900,
+    for: "for 4 weeks",
+    images: [
+      "./images/rooms/1/1.jpg",
+      "./images/rooms/1/2.jpg",
+      "./images/rooms/1/3.jpg",
+      "./images/rooms/1/4.jpg",
+    ],
+    category: 'Hotel'
+  },
+  {
+    name: "CERVO Mountain Resort",
+    description: `
+    <p style={{margin: 0}}>
+    Surrounded by the rugged beauty of Zermatt, the CERVO is the gateway to the
+    mystical mountain world of the Alps. With a deeply rooted sense of the extraordinary, of highest
+    quality and of authentic hospitality, CERVO invites its guests to explore the impressive nature
+    around us. And to discover themselves. Casual luxury, a modern design, warm colors and
+    natural materials. This is the contemporary alpine style of CERVO.</p>
+
+    <ul>
+      <li>
+      room category: Nomad Roof Suite
+      </li>
+      <li>
+      breakfast not included
+      </li>
+      <li>
+      comfortable workspaces
+      </li>
+      <li>
+      fast and stable WiFi
+      </li>
+      <li>
+      co-working space “Ferdi” included
+      </li>
+      <li>
+      exclusive Spa included
+      </li>
+      <li>
+      additional IT hardware upon request
+      </li>
+      <li>
+      weekly room cleaning
+      </li>
+      <li>
+      pet friendly!
+      </li>
+      <li>
+      Yoga and meditation classes
+      </li>
+    </ul>
+    
+    `,
+    city: "Zermatt",
+    country: "Switzerland",
+    availability: "May, June, October, November",
+    from: 7400,
+    for: "for 4 weeks",
+    images: [
+      "./images/rooms/1/1.jpg",
+      "./images/rooms/1/2.jpg",
+      "./images/rooms/1/3.jpg",
+      "./images/rooms/1/4.jpg",
+    ],
+    category: 'Hotel'
+  },
   {
     name: "Rocky Mansion (Private House) with 7 bedrooms",
     description: `
@@ -217,8 +376,8 @@ const data = [
     from: 3.600,
     for: "for 1 week",
     images: [
-      "./images/rooms/3/1.jpg",
       "./images/rooms/3/2.jpg",
+      "./images/rooms/3/1.jpg",
       "./images/rooms/3/3.jpg",
       "./images/rooms/3/4.jpg",
       "./images/rooms/3/5.jpg",
@@ -388,7 +547,7 @@ not included.
     from: 7.800,
     for: "for 1 week",
     images: [
-      "./images/rooms/4/1.jpg",
+      "./images/rooms/4/11.jpg",
       "./images/rooms/4/2.jpg",
       "./images/rooms/4/3.jpg",
       "./images/rooms/4/4.jpg",
@@ -398,170 +557,12 @@ not included.
       "./images/rooms/4/8.jpg",
       "./images/rooms/4/9.jpg",
       "./images/rooms/4/10.jpg",
-      "./images/rooms/4/11.jpg",
+      "./images/rooms/4/1.jpg",
       "./images/rooms/4/12.jpg",
       "./images/rooms/4/13.jpg",
       "./images/rooms/4/14.jpg",
     ],
     category: 'House'
-  },
-
-  {
-    name: "Hotel Lo Sereno",
-    description: `
-    <p style={{margin: 0}}>
-    Lo Sereno presents a sensual and sophisticated approach to barefoot elegance. The ten-suite hotel exists in a balance of romance and adventure, including a gourmet Mexican concept kitchen, sourcing local fresh ingredients daily. The bar and dining area are open-air and encapsulated by the hotel’s glittering black infinity pool. At Lo Sereno you can enjoy cocktails and beverages either at the dining area, in the lounge, or on the beach. Lo Sereno provides all the amenities a modern traveler may desire, curating brands worldwide for an all-sensory experience. One visit to Lo Sereno and you will always have a home to return to on the beach.
-    </p>
-
-    <ul>
-      <li>
-      breakfast included
-      </li>
-      <li>
-      comfortable workspaces
-      </li>
-      <li>
-      fast and stable WiFi
-      </li>
-      <li>
-      workspace outside the room
-      </li>
-      <li>
-      additional IT hardware upon request
-      </li>
-      <li>
-      daily room cleaning
-      </li>
-    </ul>
-    
-    `,
-    city: "Troncones",
-    country: "Mexico",
-    availability: "All year round",
-    from: 4000,
-    for: "for 4 weeks",
-    images: [
-      "./images/rooms/2/1.jpg",
-      "./images/rooms/2/2.jpg",
-      "./images/rooms/2/3.jpg",
-      "./images/rooms/2/4.jpg",
-    ],
-    category: 'Hotel'
-  },
-
-  {
-    name: "CERVO Mountain Resort",
-    description: `
-    <p style={{margin: 0}}>
-    Surrounded by the rugged beauty of Zermatt, the CERVO is the gateway to the
-mystical mountain world of the Alps. With a deeply rooted sense of the extraordinary, of highest
-quality and of authentic hospitality, CERVO invites its guests to explore the impressive nature
-around us. And to discover themselves. Casual luxury, a modern design, warm colors and
-natural materials. This is the contemporary alpine style of CERVO.</p>
-
-    <ul>
-      <li>
-      room category: Nomad room L, Nomad room M
-      </li>
-      <li>
-      breakfast not included
-      </li>
-      <li>
-      comfortable workspaces
-      </li>
-      <li>
-      fast and stable WiFi
-      </li>
-      <li>
-      co-working space “Ferdi” included
-      </li>
-      <li>
-      exclusive Spa included
-      </li>
-      <li>
-      additional IT hardware upon request
-      </li>
-      <li>
-      weekly room cleaning
-      </li>
-      <li>
-      pet friendly!
-      </li>
-      <li>
-      Yoga and meditation classes
-      </li>
-    </ul>
-    
-    `,
-    city: "Zermatt",
-    country: "Switzerland",
-    availability: "May, June, October, November",
-    from: 4900,
-    for: "for 4 weeks",
-    images: [
-      "./images/rooms/1/1.jpg",
-      "./images/rooms/1/2.jpg",
-      "./images/rooms/1/3.jpg",
-      "./images/rooms/1/4.jpg",
-    ],
-    category: 'Hotel'
-  },
-  {
-    name: "CERVO Mountain Resort",
-    description: `
-    <p style={{margin: 0}}>
-    Surrounded by the rugged beauty of Zermatt, the CERVO is the gateway to the
-    mystical mountain world of the Alps. With a deeply rooted sense of the extraordinary, of highest
-    quality and of authentic hospitality, CERVO invites its guests to explore the impressive nature
-    around us. And to discover themselves. Casual luxury, a modern design, warm colors and
-    natural materials. This is the contemporary alpine style of CERVO.</p>
-
-    <ul>
-      <li>
-      room category: Nomad Roof Suite
-      </li>
-      <li>
-      breakfast not included
-      </li>
-      <li>
-      comfortable workspaces
-      </li>
-      <li>
-      fast and stable WiFi
-      </li>
-      <li>
-      co-working space “Ferdi” included
-      </li>
-      <li>
-      exclusive Spa included
-      </li>
-      <li>
-      additional IT hardware upon request
-      </li>
-      <li>
-      weekly room cleaning
-      </li>
-      <li>
-      pet friendly!
-      </li>
-      <li>
-      Yoga and meditation classes
-      </li>
-    </ul>
-    
-    `,
-    city: "Zermatt",
-    country: "Switzerland",
-    availability: "May, June, October, November",
-    from: 7400,
-    for: "for 4 weeks",
-    images: [
-      "./images/rooms/1/1.jpg",
-      "./images/rooms/1/2.jpg",
-      "./images/rooms/1/3.jpg",
-      "./images/rooms/1/4.jpg",
-    ],
-    category: 'Hotel'
   },
 ];
 
