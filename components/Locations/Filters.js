@@ -28,6 +28,8 @@ export default function Filters({
   setCountry,
   country,
   handleFilter,
+  setCategory,
+  category
 }) {
   return (
     <Wrapper>
@@ -42,6 +44,19 @@ export default function Filters({
         onChange={(e, val) => setCountry(val)}
         renderInput={(params) => (
           <TextField {...params} label="Country" variant="outlined" />
+        )}
+      />
+      <Autocomplete
+        options={[
+          'Hotel', 'House'
+        ]}
+        getOptionLabel={(option) => option}
+        fullWidth
+        style={{ marginTop: 15 }}
+        value={category}
+        onChange={(e, val) => setCategory(val)}
+        renderInput={(params) => (
+          <TextField {...params} label="Category" variant="outlined" />
         )}
       />
       <Title style={{ marginTop: 30 }}>Price</Title>

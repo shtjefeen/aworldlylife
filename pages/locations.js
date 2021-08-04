@@ -32,6 +32,380 @@ const Title = styled.div`
 const Wrapper = styled.div``;
 
 const data = [
+
+  {
+    name: "Rocky Mansion (Private House) with 7 bedrooms",
+    description: `
+    <p style={{margin: 0}}>
+    High Season (July/August) = USD 3,000 per night
+    <br/>
+    Low Season (May/June/Sept) = USD 1,750 per night
+    <br/>
+    Off season (rest 6 months) = USD 600 per night
+    </p>
+
+    <p>
+      Rocky Mansion is an elegant and spacious family villa, facing South in a privileged wind-
+      sheltered location above the marvellous golden sand Agrari Beach with magnificent views of the
+      Aegean Sea. Agrari Beach, with its intimate charm and crystal clear water, is just a quick 10 min
+      walk downhill. The villa&#39;s charming interior, schemed in light blue, white and ochre, could be
+      described as “beach house style” combining traditional elements of Cycladic architecture with
+      provincial selected details.
+    </p>
+
+    <p>
+    The outdoor spaces of Rocky Mansion, surrounded by rocky hills and Mediterranean herbs,
+    embrace the true spirit of summer life as they allow living each moment of the day in total
+    comfort and relaxation. An array of two-level sitting areas and one distinct dining/lounge
+    pergola-shaded area, paired with a stone-sculpted dining table and a traditional wood fire BBQ,
+    is offering guests a perfect entertaining area. An elegant infinity pool surrounded by a very
+    spacious sun deck with comfortable summer furniture dominates the villa’s terrace well
+    accompanied by a covered pergola providing shading. The fully equipped kitchen with modern
+    appliances gives onto a pleasing living-sitting space directly accessing the swimming pool and
+    its wide terraces.
+    </p>
+
+    <h4>
+    <strong>The Villa:</strong>
+    </h4>
+    <p style={{margin:0}}>7 Bedrooms + separate staff room - total sleeping capacity: 18 guests</p>
+
+    <p>
+      Total Villa: 400 sqm
+      <br/>
+      Total Land: 5,500 sqm
+      <br/>
+      <ul>
+        <li>
+          Parking area for 8 cars and verandas of 300 sqm
+        </li>
+        <li>
+          Lagoon-like infinity swimming pool of 40 sqm with 8 persons outdoor Jacuzzi (no hot
+          water)
+        </li>
+        <li>
+          Separate maids room
+        </li>
+      </ul>
+    </p>
+
+
+    <h4><strong>The Rooms:</strong></h4>
+    <p>
+    Main Villa: 8 guests
+      <br/>
+      <ul>
+        <li>
+          Master bedroom: Double bed, en-suite bathroom (sleeps 2).
+        </li>
+        <li>
+          Bedroom 1: Two bunk beds, shared bathroom (sleeps 4 - ideal for kids).
+        </li>
+        <li>
+          Bedroom 2: Double bed, shared bathroom (sleeps 2).
+        </li>
+      </ul>
+    </p>
+
+    <p>Guest Studios: 10 guests</p>
+
+    <ul>
+            <li>
+            Guest room 1: Double bed and single bed, en-suite bathroom, separate entrance (sleeps
+              3).
+            </li>
+            <li>
+            Guest room 2: Two single beds, en-suite bathroom, separate entrance (sleeps 2).
+            </li>
+            <li>
+            Guest room 3: Double bed, en-suite bathroom, separate entrance (sleeps 2).
+            </li>
+            <li>
+            Guest room 4: Double bed and single bed, en-suite bathroom, separate entrance (sleeps
+              3).
+            </li>
+           
+    </ul>
+
+
+    <p>All double beds are 1.60 * 2.00 meters
+    <br/>
+    All single beds are 0.90 * 2.00 meters
+    </p>
+
+    <ul>
+            <li>
+            Satellite TV with Netflix
+            </li>
+            <li>
+            Music player
+            </li>
+            <li>
+            DVD player
+            </li>
+            <li>
+            HD player with 200 popular movies of 4k quality
+            </li>
+            <li>
+            Free Wi-Fi Internet
+            </li>
+            <li>
+            Private Pool
+            </li>
+            <li>
+            Private Parking
+            </li>
+            <li>
+            Two Baby cot
+            </li>
+            <li>
+            Safe deposit box
+            </li>
+            <li>
+            Security alarm system
+            </li>
+            <li>
+            Remote control for the entrance gate
+            </li>
+            <li>
+            Air conditioning in all rooms
+            </li>
+            <li>
+            Sun beds
+            </li>
+            <li>
+            Shaded Sitting area
+            </li>
+            <li>
+            Shaded Dining area
+            </li>
+            <li>
+            Barbeque
+            </li>
+            <li>
+            Pool Bar
+            </li>
+            <li>
+            Outdoor shower
+            </li>
+        
+    </ul>
+
+    <p><strong>Services included</strong></p>
+
+    <ul>
+              <li>
+                Private concierge 7 days a week
+              </li>
+              <li>
+              Airport meet and greet on arrival. Baggage assistance &amp; guide to the villas. Ride fee is
+              not included.
+              </li>
+              <li>
+              Housekeeping 7 days a week. 4 hours daily maid service.
+              </li>
+              <li>
+              Change of linen and towels twice weekly.
+              </li>
+    </ul>
+   
+    
+    `,
+    city: "Mykonos",
+    country: "Greece",
+    availability: "All year round with variable pricing",
+    from: 3.600,
+    for: "for 1 week",
+    images: [
+      "./images/rooms/3/1.jpg",
+      "./images/rooms/3/2.jpg",
+      "./images/rooms/3/3.jpg",
+      "./images/rooms/3/4.jpg",
+      "./images/rooms/3/5.jpg",
+      "./images/rooms/3/6.jpg",
+      "./images/rooms/3/7.jpg",
+      "./images/rooms/3/8.jpg",
+      "./images/rooms/3/9.jpg",
+      "./images/rooms/3/10.jpg",
+      "./images/rooms/3/11.jpg",
+      "./images/rooms/3/12.jpg",
+      "./images/rooms/3/13.jpg",
+    ],
+    category: 'House'
+  },
+  {
+    name: "Rocky Estate (Private House) with 10 bedrooms",
+    description: `
+    <p style={{margin: 0}}>
+    High Season (July/August) = USD 6,000 per night
+    <br/>
+    Low Season (May/June/Sept) = USD 3,650 per night
+    <br/>
+    Off season (rest 6 months) = USD 1.300 per night
+    </p>
+
+    <p>
+    Rocky Estate is among the most lavish and exclusive Mykonos villas. The villa offers the
+services of a luxury hotel in a magnificent and very private setting.This ultimate destination
+offers everything you could possibly desire for your vacation.
+    </p>
+
+    <p>
+    Built on a mountain hill and on a private land of 5,400 sqm, the villa provides a very peaceful
+    surrounding and a private staff of two members to cater for your every wish.
+    </p>
+
+    <p>
+    Boasting spectacular 180 degrees panoramic views of the southern beaches of Elia, Agrari and
+Super Paradise, guests will be fascinated with the serene mediterranean scenery. Located in a
+privileged and secluded position, Rocky Estate provides tranquility, stunning sea views and total
+privacy.The villa&#39;s charming interior is a combination of modern minimal architecture with
+provincial beach house elements. A fully equipped open-plan kitchen with modern appliances
+gives onto a living-sitting area, directly accessing the water-front swimming pool and its wide
+terraces.
+</p>
+
+<p>
+Placed in front of the villa is a 100 sqm private lagoon-like infinity swimming pool, next to a large
+wooden shaded pergola. Rocky Estate is one of those residences where words are not enough
+to describe its allure and elegance.This ultra-modern villa is tastefully furnished in minimalist
+style and is carved in solid rock 80 meters above sea level amid its own rocky forest! All
+bedrooms are exquisitely furnished, all en-suite and air conditioned. ID: 1089837
+</p>
+
+    <h4>
+    <strong>The Villa:</strong>
+    </h4>
+    <p style={{margin:0}}>10 Bedrooms - total sleeping capacity: 24+4</p>
+
+    <p>
+    Total Villa: 500 sqm
+      <br/>
+      Total Land: 5,400 sqm
+      <br/>
+      <ul>
+        <li>
+        Parking area for 20 cars and verandas of 800 sqm
+        </li>
+        <li>
+        Lagoon-like infinity swimming pool of 100 sqm
+        </li>
+        <li>
+        Pergolas of 140 sqm
+        </li>
+        <li>
+        Separate maids room
+        </li>
+      </ul>
+    </p>
+
+
+    <h4><strong>The Rooms:</strong></h4>
+    <ul>
+        <li>
+        1st floor master bedroom, king bed, en-suite bathroom = sleeps 2
+        </li>
+        <li>
+        1st floor bedroom, king bed, en-suite bathroom = sleeps 2
+        </li>
+        <li>
+        Ground floor bedroom, 1 king bed, Sofa bed, en-suite bathroom = sleeps 2+2
+        </li>
+        <li>
+        Ground floor bedroom, 1 king bed, Sofa bed, en-suite bathroom = sleeps 2+2
+        </li>
+        <li>
+        Ground floor bedroom, 2 single beds, en-suite bathroom = sleeps 2
+        </li>
+        <br/>
+        <li>
+        Basement floor bedroom, 1 king bed, en-suite bathroom = sleeps 2
+        </li>
+        <li>
+        Basement floor bedroom, 1 king beds en-suite bathroom = sleeps 2
+        </li>
+        <li>
+        Basement floor bedroom, 2 king beds, en-suite bathroom = sleeps 4
+        </li>
+        <br/>
+
+        <li>
+        Pool bedroom, 1 king bed, en-suite bathroom = sleeps 2
+        </li>
+        <li>
+        Pool bedroom, 2 king beds, en-suite bathroom = sleeps 4
+        </li>
+
+        <br/>
+
+        <li>
+        Samsung Ultra HD 65&quot; TV, Netflix subscribed, Wi-Fi in-out
+        </li>
+        <li>
+        Outdoor dining and wood fire BBQ
+        </li>
+        <li>
+        A/C and heating in all rooms
+        </li>
+
+        <li>Kitchen with modern appliances, fully equipped</li>
+        <li>Music player</li>
+        <li>Private Infinity Pool</li>
+        <li>Private Parking</li>
+        <li>Baby cot</li>
+        <li>Safe deposit box</li>
+        <li>Security alarm system</li>
+        <li>Remote control for the entrance gate</li>
+        <li>Sun beds</li>
+        <li>Sun beds</li>
+        <li>Shaded Dining area</li>
+        <li>Pool Bar</li>
+        <li>Outdoor shower</li>
+      </ul>
+
+    <p><strong>Services included</strong></p>
+
+    <ul>
+            <li>
+            Private concierge 7 days a week
+            </li>
+            <li>
+            Airport meet and greet on arrival. Baggage assistance &amp; guide to the villas. Ride fee is
+not included.
+            </li>
+            <li>
+            Housekeeping 7 days a week. 4 hours daily maid service.
+            </li>
+            <li>
+            Change of linen and towels twice weekly.
+            </li>
+           
+    </ul>
+    `,
+    city: "Mykonos,",
+    country: "Greece",
+    availability: "All year round with variable pricing",
+    from: 7.800,
+    for: "for 1 week",
+    images: [
+      "./images/rooms/4/1.jpg",
+      "./images/rooms/4/2.jpg",
+      "./images/rooms/4/3.jpg",
+      "./images/rooms/4/4.jpg",
+      "./images/rooms/4/5.jpg",
+      "./images/rooms/4/6.jpg",
+      "./images/rooms/4/7.jpg",
+      "./images/rooms/4/8.jpg",
+      "./images/rooms/4/9.jpg",
+      "./images/rooms/4/10.jpg",
+      "./images/rooms/4/11.jpg",
+      "./images/rooms/4/12.jpg",
+      "./images/rooms/4/13.jpg",
+      "./images/rooms/4/14.jpg",
+    ],
+    category: 'House'
+  },
+
   {
     name: "Hotel Lo Sereno",
     description: `
@@ -72,6 +446,7 @@ const data = [
       "./images/rooms/2/3.jpg",
       "./images/rooms/2/4.jpg",
     ],
+    category: 'Hotel'
   },
 
   {
@@ -129,6 +504,7 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
       "./images/rooms/1/3.jpg",
       "./images/rooms/1/4.jpg",
     ],
+    category: 'Hotel'
   },
   {
     name: "CERVO Mountain Resort",
@@ -185,6 +561,7 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
       "./images/rooms/1/3.jpg",
       "./images/rooms/1/4.jpg",
     ],
+    category: 'Hotel'
   },
 ];
 
@@ -196,6 +573,7 @@ export default function Locations() {
   const [max, setMax] = useState("");
   const [country, setCountry] = useState(null);
   const [locations, setLocations] = useState(data);
+  const [category, setCategory] = useState(null);
 
   const handleOpen = (images) => {
     setGalleryImage(images);
@@ -218,28 +596,23 @@ export default function Locations() {
     });
 
   const handleFilter = () => {
-    if (country && !min && !max) {
-      setLocations(data.filter((item) => item.country === country));
-    } else if (country && min && !max) {
-      setLocations(
-        data.filter((item) => item.country === country && item.from >= min)
-      );
-    } else if (country && max && !min) {
-      setLocations(
-        data.filter((item) => item.country === country && item.from <= max)
-      );
-    } else if (country && max && min) {
-      setLocations(
-        data.filter(
-          (item) =>
-            item.country === country && item.from <= max && item.from >= min
-        )
-      );
-    } else if (!country && min && !max) {
-      setLocations(data.filter((item) => item.from >= min));
-    } else if (!country && !min && max) {
-      setLocations(data.filter((item) => item.from <= max));
+    let newLocations = data;
+
+    if (category) {
+      newLocations = newLocations.filter(item => item.category === category);
     }
+    if (country) {
+      newLocations = newLocations.filter(item => item.country === country);
+    }
+    if (min) {
+      newLocations = newLocations.filter(item => item.from >= min);
+    }
+    if (max) {
+      newLocations = newLocations.filter(item => item.from <= max);
+    }
+
+    setLocations(newLocations)
+
   };
   return (
     <Wrapper>
@@ -249,7 +622,7 @@ export default function Locations() {
           nextSrc={galleryImage[(photoIndex + 1) % galleryImage.length]}
           prevSrc={
             galleryImage[
-              (photoIndex + galleryImage.length - 1) % galleryImage.length
+            (photoIndex + galleryImage.length - 1) % galleryImage.length
             ]
           }
           onCloseRequest={handleClose}
@@ -282,6 +655,8 @@ export default function Locations() {
               country={country}
               setCountry={setCountry}
               handleFilter={handleFilter}
+              category={category}
+              setCategory={setCategory}
             />
           </Grid>
           <Grid item xs={12} md={9}>
