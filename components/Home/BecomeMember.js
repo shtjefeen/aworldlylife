@@ -35,6 +35,16 @@ const Wrapper = styled.div`
     }
   }
 `;
+
+const Link = styled.a`
+  text-decoration: none;
+  margin: 0 0.2rem;
+
+  &:visited:{
+    color: black;
+  }
+`
+
 export default function BecomeMember() {
   return (
     <Wrapper>
@@ -45,22 +55,15 @@ export default function BecomeMember() {
               <TextDivider />
               <h1>Become a member</h1>
               <p>
-                Enjoy exclusive access to our offers - Join the waitlist today!
+                Register 
+                <Link target="_blank"
+                  href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c">
+                  HERE
+                </Link> 
+                and become part of the Worldly community. As partof our beta testing, as a registered user, youcan then book your location of choice.
               </p>
-              <ArrowLink
-                target="_blank"
-                href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
-              >
-                Join Us
-              </ArrowLink>
-
-              <p style={{ marginTop: 60 }}>
-                What happens next? <br />
-                <br />
-                You sign up and get on the waitlist. As soon as it is your turn,
-                we share the hidden spots with you. <br />
-                <br />
-                You tell us where you want to go and we take care of the rest.
+              <p>
+                Your favourite region or country is not listed? No worries, tell us which region you want to discover and we take care of the rest.
               </p>
             </div>
           </Grid>
