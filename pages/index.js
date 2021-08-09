@@ -9,15 +9,20 @@ import Community from "@components/Home/Community";
 import AboutUs from "@components/Home/AboutUs";
 import BecomeMember from "@components/Home/BecomeMember";
 import Contact from "@components/Contact";
+import { NextSeo } from 'next-seo';
 export default function index() {
   return (
     <>
+      <NextSeo
+        title="Home"
+        description="We curate unique locations for you. To work, live and discover."
+      />
+
       <Hero />
       <TwoImages />
       <Intro />
       <DiveIn />
       <Concept />
-
       <OurPromise />
       <Community />
       <AboutUs />

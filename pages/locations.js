@@ -7,6 +7,7 @@ import Post from "@components/Locations/Posts/Post";
 import "react-magic-slider-dots/dist/magic-dots.css";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { NextSeo } from 'next-seo';
 const Title = styled.div`
   margin: 48px 0;
   p {
@@ -373,7 +374,7 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
     city: "Mykonos",
     country: "Greece",
     availability: "All year round with variable pricing",
-    from: 3.600,
+    from: 3600,
     for: "for 1 week",
     images: [
       "./images/rooms/3/2.jpg",
@@ -544,7 +545,7 @@ not included.
     city: "Mykonos,",
     country: "Greece",
     availability: "All year round with variable pricing",
-    from: 7.800,
+    from: 7800,
     for: "for 1 week",
     images: [
       "./images/rooms/4/11.jpg",
@@ -617,6 +618,10 @@ export default function Locations() {
   };
   return (
     <Wrapper>
+      <NextSeo
+        title="Locations"
+      />
+
       {isOpen && (
         <Lightbox
           mainSrc={galleryImage[photoIndex]}

@@ -55,12 +55,14 @@ export default function BecomeMember() {
               <TextDivider />
               <h1>Become a member</h1>
               <p>
-                Register 
+                Register
                 <Link target="_blank"
-                  href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c">
+                  href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
+                  style={{ fontWeight: 'bold', color: '#993704' }}
+                >
                   HERE
-                </Link> 
-                and become part of the Worldly community. As partof our beta testing, as a registered user, youcan then book your location of choice.
+                </Link>
+                and become part of the Worldly community and our beta testing. As a registered user, you can then book your <Link style={{ color: '#000', textDecoration: 'underline' }} href="/locations">LOCATION of choice</Link>.
               </p>
               <p>
                 Your favourite region or country is not listed? No worries, tell us which region you want to discover and we take care of the rest.

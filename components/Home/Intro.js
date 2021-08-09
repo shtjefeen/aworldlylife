@@ -37,7 +37,7 @@ export default function Intro() {
           - whether it&apos;s a certain city, a farm or an island. All
           necessities are available on demand.
         </p>
-        <p>
+        <p style={{ fontWeight: 'bold' }}>
           We curate the most attractive long-stay deals for you with hotels and houses around the world. Luxury remote work for digital nomads!
         </p>
       </Container>
