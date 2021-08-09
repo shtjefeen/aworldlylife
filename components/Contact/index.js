@@ -43,8 +43,8 @@ export default function BecomeMember() {
               <TextDivider />
               <h1>Contact</h1>
               <p>
-                <Link href="mailto:tobias@aworldlylife.com">
-                  tobias@aworldlylife.com
+                <Link href="mailto:info@aworldlylife.com">
+                  info@aworldlylife.com
                 </Link>
               </p>
               <Form />

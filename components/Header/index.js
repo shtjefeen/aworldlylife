@@ -60,9 +60,9 @@ function Index() {
       <Container>
         <Logo style={{ width: 200, fill: "#000" }} link />
         <Navigation>
-          <Link href="/">Home</Link>
-          <Link href="/locations">Locations</Link>
-          <Link href="/become-partner">Become a partner</Link>
+          <Link style={{fontSize:'1rem'}} href="/">Home</Link>
+          <Link style={{fontSize:'1rem'}} href="/locations">Locations</Link>
+          <Link style={{fontSize:'1rem'}} href="/become-partner">Become a partner</Link>
         </Navigation>
       </Container>
       <Mobile />

@@ -31,15 +31,14 @@ export default function Intro() {
         <p>
           Work used to be something that limited you from doing the things you
           wanted (travel, experience, socialise), rather than something that
-          enabled you to do those things. Working in a different environment, a
+          enabled you to do those things. But times have changed! Working in a different environment, a
           foreign culture, among inspiring people can be a tremendous creativity
           and productivity booster. We all have spaces where we feel most alive
           - whether it&apos;s a certain city, a farm or an island. All
           necessities are available on demand.
         </p>
         <p>
-          We curate the most attractive long-stay deals for you with hotels
-          around the world.
+          We curate the most attractive long-stay deals for you with hotels and houses around the world. Luxury remote work for digital nomads!
         </p>
       </Container>
     </Wrapper>

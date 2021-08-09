@@ -76,3 +76,8 @@ typings/
 .fusebox/
 
 .vercel
+
+# Static site folder
+out
+
+.DS_Store
