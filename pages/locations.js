@@ -377,7 +377,7 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
     from: 3600,
     for: "for 1 week",
     images: [
-      "./images/rooms/3/2.jpg",
+      "./images/rooms/3/2.JPG",
       "./images/rooms/3/1.jpg",
       "./images/rooms/3/3.jpg",
       "./images/rooms/3/4.jpg",
@@ -548,7 +548,6 @@ not included.
     from: 7800,
     for: "for 1 week",
     images: [
-      "./images/rooms/4/11.jpg",
       "./images/rooms/4/2.jpg",
       "./images/rooms/4/3.jpg",
       "./images/rooms/4/4.jpg",
@@ -558,6 +557,7 @@ not included.
       "./images/rooms/4/8.jpg",
       "./images/rooms/4/9.jpg",
       "./images/rooms/4/10.jpg",
+      "./images/rooms/4/11.jpg",
       "./images/rooms/4/1.jpg",
       "./images/rooms/4/12.jpg",
       "./images/rooms/4/13.jpg",
