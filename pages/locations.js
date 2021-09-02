@@ -7,7 +7,7 @@ import Post from "@components/Locations/Posts/Post";
 import "react-magic-slider-dots/dist/magic-dots.css";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 const Title = styled.div`
   margin: 48px 0;
   p {
@@ -33,9 +33,6 @@ const Title = styled.div`
 const Wrapper = styled.div``;
 
 const data = [
-
-
-
   {
     name: "Hotel Lo Sereno",
     description: `
@@ -76,7 +73,8 @@ const data = [
       "./images/rooms/2/3.jpg",
       "./images/rooms/2/4.jpg",
     ],
-    category: 'Hotel'
+    category: "Hotel",
+    map: "https://www.google.com/maps/place/Lo+Sereno+Casa+de+Playa/@17.7861949,-101.7318188,15z/data=!4m2!3m1!1s0x0:0x2b0ed1374c5730d4?sa=X&ved=2ahUKEwiC05v8xMvyAhXPFVkFHXyuABQQ_BIwE3oECE8QBQ ",
   },
 
   {
@@ -134,7 +132,8 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
       "./images/rooms/1/3.jpg",
       "./images/rooms/1/4.jpg",
     ],
-    category: 'Hotel'
+    category: "Hotel",
+    map: "https://www.google.com/maps/place/CERVO+Mountain+Resort/@46.0219181,7.7543865,15z/data=!4m2!3m1!1s0x0:0x61c37aafec66a00c?sa=X&ved=2ahUKEwiwo-iHxcvyAhV7gP0HHdGXCyAQ_BIwFHoECFMQBQ",
   },
   {
     name: "CERVO Mountain Resort",
@@ -191,8 +190,76 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
       "./images/rooms/1/3.jpg",
       "./images/rooms/1/4.jpg",
     ],
-    category: 'Hotel'
+    category: "Hotel",
+    map: "https://www.google.com/maps/place/CERVO+Mountain+Resort/@46.0219181,7.7543865,15z/data=!4m2!3m1!1s0x0:0x61c37aafec66a00c?sa=X&ved=2ahUKEwiwo-iHxcvyAhV7gP0HHdGXCyAQ_BIwFHoECFMQBQ",
   },
+
+  {
+    name: "Hotel Steffani",
+    description: `
+    <p style={{margin: 0}}>
+    Surrounded by the rugged beauty of Zermatt, the CERVO is the gateway to the
+    mystical mountain world of the Alps. With a deeply rooted sense of the extraordinary, of highest
+    quality and of authentic hospitality, CERVO invites its guests to explore the impressive nature
+    around us. And to discover themselves. Casual luxury, a modern design, warm colors and
+    natural materials. This is the contemporary alpine style of CERVO.</p>
+
+    <ul>
+      <li>
+      Low season Standard Double Room USD 3,500
+      </li>
+      <li>
+      Mid Season Standard Double Room  USD 3,990
+      </li>
+      <li>
+      High Season Summer Standard Double Room USD 4,450
+      </li>
+      <li>
+      High Season Winter (Black out dates may apply such as Christmas/New Year) Standard Double Room USD 5,700
+      </li>
+    </ul>
+    <p>*all prices are for single use (double use +CHF 60/night) and excluding city taxes -other room categories available upon request
+    </p>
+
+    <p>
+    The Hotel Steffani is located in the heart of St.Moritz and invites you to be enchanted by the beauty of the Engadin valley.
+    </p>
+
+    <p>
+    The boutique hotel has 60 rooms, 3 on site restaurants, 2 bars, 1 nightclub as well as a Pool & Spa. For business travelers the hotel also offers 24hours concierge service as well as free WiFi, there are also several work places in the hotel infront of the fireplaces for a comfortable work environment. All guests rooms at The Steffani are newly renovated and  equipped with  movable desks to ensure a customized work environment.
+    </p>
+
+    <ul>
+    <li>breakfast included</li>
+    <li>daily complimentary water with and without gas</li>
+    <li>24 – Concierge service</li>
+    <li>fast and stable WiFi</li>
+    <li>comfortable in-room workspaces</li>
+    <li>workspace outside the room</li>
+    <li>daily room cleaning </li>
+    <li>SPA entrance included</li>
+    <li>pet Friendly</li>
+    <li>on site Slow Resistance Training / Pilates Studio</li>
+    </ul>
+
+
+    `,
+    city: "St. Moritz",
+    country: "Switzerland",
+    availability: "All year round with variable pricing",
+    from: 7400,
+    for: "for 4 weeks",
+    images: [
+      "./images/rooms/5/5.jpg",
+      "./images/rooms/5/2.jpg",
+      "./images/rooms/5/3.jpg",
+      "./images/rooms/5/4.jpg",
+      "./images/rooms/5/1.jpg",
+    ],
+    category: "Hotel",
+    map: "https://www.google.com/maps/place/Hotel+Steffani/@46.497364,9.8375082,15z/data=!4m2!3m1!1s0x0:0xb54faf38876b1860?sa=X&ved=2ahUKEwi-o_mUxcvyAhV4gP0HHSa8D7AQ_BIwF3oECEwQBQ",
+  },
+
   {
     name: "Rocky Mansion (Private House) with 7 bedrooms",
     description: `
@@ -391,7 +458,8 @@ natural materials. This is the contemporary alpine style of CERVO.</p>
       "./images/rooms/3/12.jpg",
       "./images/rooms/3/13.jpg",
     ],
-    category: 'House'
+    category: "House",
+    map: "https://www.google.com/maps/place/RockyMansion/@37.4241291,25.3780442,15z/data=!4m2!3m1!1s0x0:0xd225bc100882a826?sa=X&ved=2ahUKEwidx8atxcvyAhUCFFkFHeD5BUQQ_BIwFXoECE8QBQ",
   },
   {
     name: "Rocky Estate (Private House) with 10 bedrooms",
@@ -548,12 +616,12 @@ not included.
     from: 7800,
     for: "for 1 week",
     images: [
-      "./images/rooms/4/2.jpg",
+      "./images/rooms/4/7.jpg",
       "./images/rooms/4/3.jpg",
       "./images/rooms/4/4.jpg",
       "./images/rooms/4/5.jpg",
       "./images/rooms/4/6.jpg",
-      "./images/rooms/4/7.jpg",
+      "./images/rooms/4/2.jpg",
       "./images/rooms/4/8.jpg",
       "./images/rooms/4/9.jpg",
       "./images/rooms/4/10.jpg",
@@ -563,7 +631,8 @@ not included.
       "./images/rooms/4/13.jpg",
       "./images/rooms/4/14.jpg",
     ],
-    category: 'House'
+    category: "House",
+    map: "https://rockyestate.com/",
   },
 ];
 
@@ -601,26 +670,23 @@ export default function Locations() {
     let newLocations = data;
 
     if (category) {
-      newLocations = newLocations.filter(item => item.category === category);
+      newLocations = newLocations.filter((item) => item.category === category);
     }
     if (country) {
-      newLocations = newLocations.filter(item => item.country === country);
+      newLocations = newLocations.filter((item) => item.country === country);
     }
     if (min) {
-      newLocations = newLocations.filter(item => item.from >= min);
+      newLocations = newLocations.filter((item) => item.from >= min);
     }
     if (max) {
-      newLocations = newLocations.filter(item => item.from <= max);
+      newLocations = newLocations.filter((item) => item.from <= max);
     }
 
-    setLocations(newLocations)
-
+    setLocations(newLocations);
   };
   return (
     <Wrapper>
-      <NextSeo
-        title="Locations"
-      />
+      <NextSeo title="Locations" />
 
       {isOpen && (
         <Lightbox
@@ -628,7 +694,7 @@ export default function Locations() {
           nextSrc={galleryImage[(photoIndex + 1) % galleryImage.length]}
           prevSrc={
             galleryImage[
-            (photoIndex + galleryImage.length - 1) % galleryImage.length
+              (photoIndex + galleryImage.length - 1) % galleryImage.length
             ]
           }
           onCloseRequest={handleClose}

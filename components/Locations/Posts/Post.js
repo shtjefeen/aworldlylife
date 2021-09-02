@@ -49,7 +49,8 @@ const InfoItem = styled.div`
     margin-right: 10px;
   }
 
-  .text {
+  .text,
+  a {
     font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
@@ -57,6 +58,10 @@ const InfoItem = styled.div`
     line-height: 24px;
     text-transform: capitalize;
     color: #717171;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `;
 const Book = styled.div`
@@ -101,7 +106,15 @@ export default function index({ data = {}, handleOpen }) {
             </svg>
           </span>
           <span className="text">
-            Location: {data.city}, {data.country}
+            {data.map ? (
+              <a href={data.map} target="_blank" rel="noreferrer">
+                Location: {data.city}, {data.country}
+              </a>
+            ) : (
+              <>
+                Location: {data.city}, {data.country}
+              </>
+            )}
           </span>
         </InfoItem>
         <InfoItem>
