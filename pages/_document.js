@@ -66,7 +66,7 @@ class MyDocument extends Document {
             content="/favicon/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
-
+          <meta name="facebook-domain-verification" content="74pdlo2omdcuxujd4izzxbmmruxt5n" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
