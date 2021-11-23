@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import App from "next/app";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { ThemeProvider as StyledTheme } from "styled-components";
@@ -7,8 +8,8 @@ import theme from "../theme/light";
 import LayoutDefault from "@layouts/Default";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
-
 import PropTypes from "prop-types";
+
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -23,6 +24,20 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-BNNMVL90RY`}
+      />
+      <Script strategy="lazyOnload">
+      {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BNNMVL90RY', {
+            page_path: window.location.pathname,
+          });
+      `}
+    </Script>
       <DefaultSeo {...SEO} />
 
       <style global jsx>{`
