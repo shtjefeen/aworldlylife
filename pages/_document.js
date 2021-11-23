@@ -66,7 +66,10 @@ class MyDocument extends Document {
             content="/favicon/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="facebook-domain-verification" content="74pdlo2omdcuxujd4izzxbmmruxt5n" />
+          <meta
+            name="facebook-domain-verification"
+            content="74pdlo2omdcuxujd4izzxbmmruxt5n"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -95,10 +98,38 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
           <Script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" />
-
+ 
+          <Script id="facebook-pixel">
+            {`
+           !function(f,b,e,v,n,t,s)
+           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+           if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+           n.queue=[];t=b.createElement(e);t.async=!0;
+           t.src=v;s=b.getElementsByTagName(e)[0];
+           s.parentNode.insertBefore(t,s)}(window, document,'script',
+           'https://connect.facebook.net/en_US/fbevents.js');
+           fbq('init', '1577678739252182');
+           fbq('track', 'PageView');
+          `}
+          </Script>
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=1577678739252182&ev=PageView&noscript=1"
+            />
+          </noscript>
         </Head>
 
         <body>
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKGXQ23"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+            }}
+          ></noscript>
           <Main />
           <NextScript />
         </body>
