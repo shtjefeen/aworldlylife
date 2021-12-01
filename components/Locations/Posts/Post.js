@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 import Gallery from "./Gallery";
 import ShowMoreText from "react-show-more-text";
+import * as fbq from '../../../lib/fbq'
 
 const Wrapper = styled.div`
   background: #ffffff;
@@ -82,6 +83,12 @@ const Book = styled.div`
   }
 `;
 export default function index({ data = {}, handleOpen }) {
+  const handlePixelTracking = () => {
+    fbq.event('Purchase', { name: data.name, category: data.category, city: data.city, country: data.country })
+  }
+  const handlePixelTrackingContentView = () => {
+    fbq.event('View Content', {})
+  }
   return (
     <Wrapper>
       <Gallery images={data.images} handleOpen={handleOpen} />
@@ -151,6 +158,7 @@ export default function index({ data = {}, handleOpen }) {
           more="Show more"
           less="Show less"
           expanded={false}
+          onClick={handlePixelTrackingContentView}
         >
           <div
             dangerouslySetInnerHTML={{
@@ -165,6 +173,7 @@ export default function index({ data = {}, handleOpen }) {
           color="primary"
           variant="contained"
           component="a"
+          onClick={handlePixelTracking}
           href={`mailto:tobias@aworldlylife.com?subject=${data.name}`}
         >
           Book now

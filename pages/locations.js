@@ -8,6 +8,7 @@ import "react-magic-slider-dots/dist/magic-dots.css";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { NextSeo } from "next-seo";
+import * as fbq from '../lib/fbq'
 const Title = styled.div`
   margin: 48px 0;
   p {
@@ -684,6 +685,7 @@ export default function Locations() {
     }
 
     setLocations(newLocations);
+    fbq.event('Search', { min, max, country, category })
   };
   return (
     <Wrapper>
@@ -695,7 +697,7 @@ export default function Locations() {
           nextSrc={galleryImage[(photoIndex + 1) % galleryImage.length]}
           prevSrc={
             galleryImage[
-              (photoIndex + galleryImage.length - 1) % galleryImage.length
+            (photoIndex + galleryImage.length - 1) % galleryImage.length
             ]
           }
           onCloseRequest={handleClose}
