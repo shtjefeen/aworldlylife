@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 import { ServerStyleSheet as StyledComponentSheets } from "styled-components";
 import { ServerStyleSheets as MaterialUiServerStyleSheets } from "@material-ui/styles";
-import { FB_PIXEL_ID } from '../lib/fbq'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -109,14 +110,6 @@ class MyDocument extends Document {
           })(window,document,'script','dataLayer','GTM-WKGXQ23')
           `}
           </Script>
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: 'none' }}
-              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-            />
-          </noscript>
         </Head>
 
         <body>

@@ -686,6 +686,7 @@ export default function Locations() {
 
     setLocations(newLocations);
     fbq.event('Search', { min, max, country, category })
+    console.log(fbq)
   };
   return (
     <Wrapper>
