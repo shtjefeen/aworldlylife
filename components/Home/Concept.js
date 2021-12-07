@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Container from "@material-ui/core/Container";
 import ArrowLink from "@design/ArrowLink";
+import * as fbq from '../../lib/fbq'
 const Wrapper = styled.div`
   padding: 140px 0;
 
@@ -28,6 +29,9 @@ const Wrapper = styled.div`
   }
 `;
 export default function Concept() {
+  const handleSubscribe = () => {
+    fbq.event('Subscribe', { page: 'Home', section: 'concept' })
+  }
   return (
     <Wrapper id="concept">
       <Container style={{ maxWidth: 900 }}>
@@ -47,6 +51,7 @@ export default function Concept() {
         </p>
         <ArrowLink
           target="_blank"
+          onClick={handleSubscribe}
           href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
         >
           Join us

@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
 import Image from "@components/Image";
+import * as fbq from '../../lib/fbq'
 const Wrapper = styled.div`
   h1 {
     font-weight: 500;
@@ -99,6 +100,9 @@ const Card = styled.div`
   }
 `;
 export default function Hero() {
+  const handleSubscribe = () => {
+    fbq.event('Subscribe', { page: 'Become Partner', section: 'hero' })
+  }
   return (
     <Wrapper>
       <Container>
@@ -115,6 +119,7 @@ export default function Hero() {
               <ArrowLink
                 target="_blank"
                 href="https://share.hsforms.com/18Y4I9TkbQl68vJnxj8Swqgboy0c"
+                onClick={handleSubscribe}
               >
                 Apply here
               </ArrowLink>

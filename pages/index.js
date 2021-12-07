@@ -10,6 +10,7 @@ import AboutUs from "@components/Home/AboutUs";
 import BecomeMember from "@components/Home/BecomeMember";
 import Contact from "@components/Contact";
 import { NextSeo } from 'next-seo';
+
 export default function index() {
   return (
     <>

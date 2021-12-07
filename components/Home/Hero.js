@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import styled from "styled-components";
 import ArrowLink from "@design/ArrowLink";
 import Image from "@components/Image";
+import * as fbq from '../../lib/fbq'
 const Wrapper = styled.div`
   margin-top: 60px;
   h1 {
@@ -39,6 +40,9 @@ const Wrapper = styled.div`
   }
 `;
 export default function Hero() {
+  const handleSubscribe = () => {
+    fbq.event('Subscribe', { page: 'Home', section: 'hero' })
+  }
   return (
     <Wrapper>
       <Container>
@@ -55,6 +59,7 @@ export default function Hero() {
               <ArrowLink
                 target="_blank"
                 href="https://share.hsforms.com/1AmySx7KrRDyn2MbTgkdSAgboy0c"
+                onClick={handleSubscribe}
               >
                 Join us
               </ArrowLink>
