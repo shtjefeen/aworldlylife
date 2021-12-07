@@ -110,6 +110,7 @@ class MyDocument extends Document {
           })(window,document,'script','dataLayer','GTM-WKGXQ23')
           `}
           </Script>
+          <meta name="version" content="1.0.0"></meta>
         </Head>
 
         <body>
